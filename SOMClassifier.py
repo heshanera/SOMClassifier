@@ -32,8 +32,7 @@ with open('diamonds.csv') as csv_file:
                     features.append(clarity.index(row[i]))
                 else:
                     features.append(float(row[i]))
-
-            diamondData.append(features)
+                diamondData.append(features)
             line_count += 1
 
     print(f'Processed {line_count} lines.')
